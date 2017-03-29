@@ -22,7 +22,7 @@ class FileGetContentsCrawler extends BaseCrawler
     /**
      * {@inheritdoc}
      */
-    protected function doCheck($lock, $certFile)
+    protected function doCheck($lock)
     {
         $boundary = '------------------------'.md5(microtime(true));
         $context = stream_context_create(array(
